@@ -1,0 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+.header {
+  background-color: #000;
+  width: 500px;
+}
+/*# sourceMappingURL=style.css.map */
