@@ -822,6 +822,11 @@ template {
   overflow: hidden;
 }
 
+.newsletter {
+  padding: 98px 0px 87px 0px;
+  background-color: #0e0b0b;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
