@@ -22,16 +22,23 @@
       padding-bottom: 30px
     &__search
       margin-left: auto
-      margin-right: auto
+      margin-right: 74px
       max-width: 340px
+  .user
+    &__name
+      margin-top: 5px
   .navbar
     &-menu
-      padding-top: 22px
+      padding-top: 20px
       padding-bottom: 22px
+      width: 672px
+      margin: auto
       &__link
         font-size: 12px
         line-height: 15px
   .hotel
+    padding-top: 5px
+    padding-bottom: 61px
     &-grid
       flex-direction: column
     &-slider
@@ -39,14 +46,51 @@
       margin-bottom: 30px
     &-right
       flex-direction: row
+    &-description
+      letter-spacing: -0.15px
+    &-info
+      &__offer
+        margin-left: 11px
+      &__rating
+        margin-top: 9px
+        margin-right: -1px
   .booking
     width: 340px
+    padding: 29px 21px 26px 24px
+    &__pricetag
+      line-height: 30px
   .map
     width: 340px
+    height: 210px
   .reviews
     &-slider
       &__item
-        max-width: 579px  
+        max-width: 579px
+      &__text
+        padding-right: 60px
+        padding-left: 66px
+        letter-spacing: -0.48px
+      &__button
+        top: 44%
+        &--next
+          left: 2px
+        &--prev
+          right: -1px
+  .breadcrumb-list
+    padding-top: 20px
+    padding-bottom: 28px
+  .newsletter
+    padding: 91px 0px 93px 0px
+    &-title
+      letter-spacing: -0.1px
+      &__strong
+        letter-spacing: -0.3px
+  .reviews
+    &__title
+      margin-top: 30px
+      margin-bottom: 49px
+      font-size: 30px
+      line-height: 38px
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -119,15 +163,15 @@
         top: 31px
         &--prev
           right: 50%
-          margin-right: -95px 
-          transform: translate(50%, 0) 
+          margin-right: -95px
+          transform: translate(50%, 0)
         &--next
           left: 50%
-          margin-left: -95px 
-          transform: translate(-50%, 0) 
+          margin-left: -95px
+          transform: translate(-50%, 0)
       &__text
-        margin: 0px 
-        padding: 0px           
+        margin: 0px
+        padding: 0px
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -146,7 +190,7 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
-  
+
 @media ( max-width: 501px )
   .hotel
     &-description
@@ -168,21 +212,70 @@
       padding-top: 23px
       padding-bottom: 28px
       align-items: end
+  .breadcrumb
+    &-list
+      padding-bottom: 16px
+      &__item
+        letter-spacing: -0.25px
   .hotel
+    padding-bottom: 43px
+    &-info
+      margin-bottom: 18px
+      &__name
+        letter-spacing: -0.15px
     &-slider
       height: 179px
     &-description
       width: 85%
+    &-wrapper
+      &__stars
+        justify-content: space-between
+        margin-right: 16px
+    &-right
+      min-height: 400px
+  .booking
+    padding: 29px 22px 26px 24px
+    &__number
+      margin-right: 3px
   .map
-    height: 173px   
+    height: 173px
   .newsletter
-    padding: 76px 0px 83px 0px
+    padding: 0px
+    &-wrapper
+      width: 88%
+    &-title
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      letter-spacing: -0.4px
+      &__strong
+        padding-top: 5px
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
     &__title
-      margin-bottom: 37px    
+      margin-top: -5px
+      margin-bottom: 37px
+  .subscribe
+    &__input
+      padding-left: 20px
   .reviews
-    &__title 
+    &-slider
+      &__profile
+        margin-left: -1px
+      &__text
+        text-align: inherit
+        letter-spacing: -0.335px
+      &__button
+        &--prev
+          margin-right: -88px
+        &--next
+          margin-left: -92px
+
+    &__title
       max-width: 245px
       font-size: 18px
-      line-height: 23px  
-    
-
+      line-height: 23px
+      margin: 29px auto 42px
