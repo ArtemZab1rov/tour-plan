@@ -1428,6 +1428,10 @@ template {
     margin: 0px;
     padding: 0px;
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
   .card {
     width: 49%;
     height: 255px;
@@ -1590,6 +1594,13 @@ template {
   .activities__title {
     font-size: 18px;
     line-height: 23px;
+    margin-bottom: 36px;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .reviews {
+    padding-bottom: 9px;
   }
   .card {
     width: 100%;
