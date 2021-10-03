@@ -68,6 +68,8 @@
   &__text
     color: $footer-text-color  
     margin-bottom: 22px
+    font-size: 14px
+    line-height: 160%
   &__link
     text-decoration: none
     color: inherit  
@@ -79,6 +81,12 @@
     height: 50px
     margin-bottom: 15px
     flex-basis: 49%
+    &::placeholder
+      font-style: normal
+      font-weight: 400
+      font-size: 12px
+      line-height: 15px
+      color: #BDBDBD
   &__message
     max-width: 539px
     height: 123px
@@ -88,6 +96,12 @@
     border: none
     flex-basis: 100%
     margin-bottom: 22px
+    &::placeholder
+      font-style: normal
+      font-weight: 400
+      font-size: 12px
+      line-height: 15px
+      color: #BDBDBD
   &__button
     min-width: 160px
     min-height: 50px
@@ -105,4 +119,7 @@
     font-weight: 700
     font-size: 12px
     line-height: 15px  
-    color: $footer-text-color  
+    color: $footer-text-color 
+  &__tel
+    text-decoration: none
+    color: inherit    

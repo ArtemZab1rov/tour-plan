@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,19 +13,19 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="navbar">
+  <header class="navbar navbar--mobile_fixed">
     <div class="container">
       <div class="navbar-top">
         <a href="#" class="logo">
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search">
+        <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
-        <a href="#" class="user navbar__user">
+        <a href="#" class="user navbar__user navbar__user--mobile_hidden">
           <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a>
@@ -42,7 +42,21 @@
     <div class="navbar-bottom">
      <div class="container">
         <ul class="navbar-menu">
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <a href="#" class="user navbar__user navbar__user--mobile_visible">
+            <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+            <span class="user__name user__name--light">Nathan</span>
+          </a>
+        </li>
+          <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+            <form action="#" class="search navbar__search navbar__search--mobile_visible">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: search">
+              </button>
+            </form>
+          </li>
+          <li class="navbar-menu__item navbar-menu__item--mt12">
             <a href="#" class="navbar-menu__link">All Deals</a>
           </li>
           <li class="navbar-menu__item">
@@ -295,9 +309,9 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__links"><img src="img/facebok.svg" alt=""></a>
-            <a href="#" class="footer__links"><img src="img/youtube.svg" alt=""></a>
-            <a href="#" class="footer__links"><img src="img/instagram.svg" alt=""></a>
+            <a href="https://ru-ru.facebook.com/" class="footer__links" target="_blank"><img src="img/facebok.svg" alt=""></a>
+            <a href="https://www.youtube.com/" class="footer__links" target="_blank"><img src="img/youtube.svg" alt=""></a>
+            <a href="https://www.instagram.com/" class="footer__links" target="_blank"><img src="img/instagram.svg" alt=""></a>
           </div>
         </div>
           <div class="footer__list footer__legal">
@@ -318,17 +332,18 @@
                 
                 9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
               </li>
-              <li class="footer__item footer__item--mb-2">
+              <li class="footer__item footer__item--mb-2 footer__item--wid">
                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt=""></div>
-                
-                Tel (business hours) : 269 1500<br>
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br>
+                <div>
+                Tel (business hours) : <a href="tel:2691500" class="footer__tel">269 1500</a><br>
+                Tel (hotline) Monday - Saturday:<a href="tel:52566138" class="footer__tel">52-56-61-38</a>(08:00 am – 20:00 pm)<br>
+                Tel (hotline) Sunday: <a href="tel:52566138" class="footer__tel">52-56-61-38</a> (08:00 am – 14:00 pm)<br>
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt=""></div>
                 
-              cherly.lawson@example.com
+                <a href="#" class="footer__link">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>
