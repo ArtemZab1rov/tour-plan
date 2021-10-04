@@ -1673,6 +1673,7 @@ template {
   }
   .navbar-bottom--visible {
     display: block;
+    overflow: scroll;
   }
   .navbar-menu {
     max-width: 400px;

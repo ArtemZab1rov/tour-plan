@@ -14,11 +14,11 @@
     width: 230px
     height: 230px
   .footer
-    &-wrapper 
+    &-wrapper
       grid-template-columns: 20% 20%
       grid-auto-rows: none
     &__contact
-      &-details 
+      &-details
         grid-column: span 3
       &-form
         grid-column: span 3
@@ -160,14 +160,14 @@
       margin-right: 0px
       &--mobile
         &_hidden
-          display: none    
+          display: none
         &_visible
-          display: flex  
+          display: flex
     &__user
       flex-direction: column
-      justify-content: center      
+      justify-content: center
     &-bottom
-      display: none 
+      display: none
       position: fixed
       left: 0
       right: 0
@@ -175,21 +175,22 @@
       bottom: 0
       padding-top: 30px
       &--visible
-        display: block 
+        display: block
+        overflow: scroll
     &-menu
       max-width: 400px
       margin: auto
       flex-direction: column
       &__item
-        margin-bottom: 20px    
+        margin-bottom: 20px
         &--mobile
           margin-right: 0px
-          
+
           &_visible
-            display: block  
+            display: block
             margin-bottom: 27px
         &--mt12
-          margin-top: 12px    
+          margin-top: 12px
 
   .menu
     &-button
@@ -212,8 +213,8 @@
     &__name
       &--light
         color: $light
-        margin-left: 0  
-        margin-top: 10px  
+        margin-left: 0
+        margin-top: 10px
   .hotel
     &-description
       width: 85%
@@ -308,7 +309,7 @@
         grid-column: 1
     &__item
       &--wid
-        max-width: 268px    
+        max-width: 268px
 
 @media ( max-width: 576px )
   .logo
@@ -333,7 +334,6 @@
       justify-content: space-evenly
   .card
     width: 70%
-  
 
 @media ( max-width: 501px )
   .hotel
@@ -341,10 +341,10 @@
       width: 55%
 @media ( max-width: 456px )
   .navbar
-    &-menu 
-      max-width: 285px 
-  .search__input 
-    width: 245px   
+    &-menu
+      max-width: 285px
+  .search__input
+    width: 245px
   .hotel
     &-description
       width: 67%
@@ -367,8 +367,7 @@
       padding-top: 23px
       padding-bottom: 30px
       align-items: end
-      
-   
+
   .breadcrumb
     &-list
       padding-bottom: 16px
