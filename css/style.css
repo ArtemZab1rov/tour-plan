@@ -1496,6 +1496,10 @@ template {
   transition: opacity 0.2s;
 }
 
+.modal__dialog::-webkit-scrollbar {
+  width: 0;
+}
+
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
