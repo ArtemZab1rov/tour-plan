@@ -38,8 +38,10 @@ menuButton.on("click", function() {
 });
 var modalButton = $("[data-togle=modal]");
 var closeModalButton = $(".modal__close");
+var closeModalButton1 = $(".modal__overlay");
 modalButton.on("click", openModal);
 closeModalButton.on("click", closeModal);
+closeModalButton1.on("click", closeModal1);
 
 function openModal() {
   var modalOverlay = $(".modal__overlay");
@@ -55,4 +57,34 @@ function closeModal(event) {
   modalOverlay.removeClass('modal__overlay--visible');
   modalDialog.removeClass('modal__dialog--visible');
 } 
+function closeModal1(event) {
+  event.preventDefault();
+  var modalOverlay = $(".modal__overlay");
+  var modalDialog = $(".modal__dialog");
+  modalOverlay.removeClass('modal__overlay--visible');
+  modalDialog.removeClass('modal__dialog--visible');
+} 
+
+$('.modal__input--phone').mask('+7(000) 000-0000');
+
+$('.form').each(function(){
+  $(this).validate({
+  errorClass: "invalid",
+  messages: {
+    name: {
+      required: "Enter a name",
+      minlength: "The name must not be shorter than 2 letters",
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com",
+    },
+    phone: {
+      required: "Phone is required",
+      
+    },
+  },
+}); 
+
+})
 });
