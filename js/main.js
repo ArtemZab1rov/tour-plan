@@ -82,6 +82,7 @@ $('.form').each(function(){
     },
     phone: {
       required: "Phone is required",
+      minlength: "Please enter at least 11 characters"
       
     },
   },

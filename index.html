@@ -8,7 +8,7 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link  href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="preload">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
@@ -357,7 +357,7 @@
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="form footer__form">
               <div class="footer__input-group"><input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2"></div>
-              <div class="footer__input-group"><input type="text" class="input footer__input footer__input--phone" placeholder="Phone Number*" name="phone" required minlength="11"></div>
+              <div class="footer__input-group"><input type="tel" class="input footer__input footer__input--phone" placeholder="Phone Number*" name="phone" required minlength="16"></div>
               <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -387,8 +387,8 @@
       <form action="send.php" method="POST" class="form modal__form">
         <div class="modal__input-group"><input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"></div>
          
-        <div class="modal__input-group"><input type="text" class="input modal__input modal__input--phone" placeholder="Phone Number*" name="phone" required
-          minlength="11"></div>
+        <div class="modal__input-group"><input type="tel" class="input modal__input modal__input--phone" placeholder="Phone Number*" name="phone" required
+          minlength="16"></div>
         
         <div class="modal__input-group"><input type="email" class="input modal__input" placeholder="Email*" name="email" required></div>
         
