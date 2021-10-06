@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
- <!--  <link rel="stylesheet" href="css/aos.css">-->
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -167,7 +167,7 @@
             <div class="map">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.2970310142733!3d7.8382523943522155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1632522233385!5m2!1sru!2sru"
-                width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 height="213" style="border:0;" allowfullscreen="" loading="lazy" class="maps5"></iframe>
             </div>
           </div>
           
@@ -180,8 +180,11 @@
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="#" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address">
+      <form action="send.php" method="POST" class="form subscribe newsletter__subscribe">
+        <div class="subscribe__input modal__input-group">
+        <input type="email" class="input modal__input modal__input--subscribe" placeholder="Your email address" name="email" required>
+        </div>
+        
         <button class="subscribe__button">Send</button>
       </form>
     </div>
@@ -288,14 +291,14 @@
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
-            <li class="footer__item"><a href="#" class="footer__link">All Deals</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Hotels</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Activities</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Spa Packages</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Hotel Day Packages</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Restaurants</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Fitness</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Rodrigues</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="footer__link">All Deals</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Hotels</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Activities</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Spa Packages</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Hotel Day Packages</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Restaurants</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Fitness</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Rodrigues</a></li>
           </ul>
         </div>
         <div class="footer__list footer__additional">
@@ -339,7 +342,7 @@
                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt=""></div>
                 <div>
                 Tel (business hours) : <a href="tel:2691500" class="footer__tel">269 1500</a><br>
-                Tel (hotline) Monday - Saturday:<a href="tel:52566138" class="footer__tel">52-56-61-38</a>(08:00 am – 20:00 pm)<br>
+                Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__tel">52&nbsp;-56-61-38</a>(08:00 am – 20:00 pm)<br>
                 Tel (hotline) Sunday: <a href="tel:52566138" class="footer__tel">52-56-61-38</a> (08:00 am – 14:00 pm)<br>
                 </div>
               </li>
@@ -354,12 +357,23 @@
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="form footer__form">
               <div class="footer__input-group"><input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2"></div>
-              <div class="footer__input-group"><input type="text" class="input footer__input modal__input--phone" placeholder="Phone Number*" name="phone" required minlength="11"></div>
+              <div class="footer__input-group"><input type="text" class="input footer__input footer__input--phone" placeholder="Phone Number*" name="phone" required minlength="11"></div>
               <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <button class="button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
+      </div>
+      <div class="footer__pay">
+        <div class="footer__pay-info">
+          <div class="footer__pay-card">
+            <span class="footer__disclaimer">Disclaimer</span>
+            <span class="footer__conditions">Conditions of use</span>
+            <span class="footer__concelation">Cancellation policy</span>
+          </div>
+          <img src="img/pay.jpg" alt="Icon: Pay">
+        </div>
+
       </div>
     </div>
   </footer>
@@ -371,12 +385,12 @@
       </a>
       <h3 class="modal__title modal__title--mb-3">Booking</h3>
       <form action="send.php" method="POST" class="form modal__form">
-        <div class="modal__input--group"><input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"></div>
+        <div class="modal__input-group"><input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2"></div>
          
-        <div class="modal__input--group"><input type="text" class="input modal__input modal__input--phone" placeholder="Phone Number*" name="phone" required
+        <div class="modal__input-group"><input type="text" class="input modal__input modal__input--phone" placeholder="Phone Number*" name="phone" required
           minlength="11"></div>
         
-        <div class="modal__input--group"><input type="text" class="input modal__input" placeholder="Email*" name="email" required></div>
+        <div class="modal__input-group"><input type="email" class="input modal__input" placeholder="Email*" name="email" required></div>
         
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <button class="button modal__button">Send</button>

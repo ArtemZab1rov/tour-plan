@@ -22,6 +22,10 @@
         grid-column: span 3
       &-form
         grid-column: span 3
+    &__pay
+      justify-content: center
+      &-info
+        width: 100%   
 
 @media ( max-width: 992px )
   .container, .newsletter-wrapper
@@ -52,7 +56,7 @@
       &__link
         font-size: 12px
         line-height: 15px
-    
+
   .hotel
     padding-top: 5px
     padding-bottom: 58px
@@ -92,9 +96,9 @@
           left: 2px
         &--prev
           right: -1px
-  .breadcrumb-list 
+  .breadcrumb-list
     padding-top: 20px
-    padding-bottom: 39px    
+    padding-bottom: 39px
   .newsletter
     padding: 91px 0px 93px 0px
     &-title
@@ -113,14 +117,14 @@
     &__card
       margin-bottom: 20px
   .activities
-    &__title   
+    &__title
       margin-top: 31px
   .card
-    &__title 
+    &__title
       max-width: 205px
       margin-bottom: 18px
-  .activities 
-    padding: 0px 0px 50px 0px        
+  .activities
+    padding: 0px 0px 50px 0px
   .card
     width: 340px
     height: 255px
@@ -360,6 +364,15 @@
       justify-content: space-evenly
   .card
     width: 70%
+  .footer
+    &__pay
+      padding-top: 30px
+      &-info
+        width: 100%  
+        flex-direction: column
+        align-items: start 
+      &-card
+        margin-bottom: 10px   
 
 @media ( max-width: 501px )
   .hotel
@@ -420,9 +433,12 @@
     &-right
       min-height: 400px
   .booking
-    padding: 29px 22px 26px 24px
+    padding: 28px 21px 23px 23px
     &__number
       margin-right: 3px
+    &__button
+      padding: 3px 7px 6px 6px
+    
   .map
     height: 173px
   .newsletter
@@ -442,7 +458,7 @@
         font-size: 30px
         line-height: 38px
     &__title
-      margin-top: -5px
+      margin-top: -9px
       margin-bottom: 37px
   .subscribe
     &__input
@@ -467,38 +483,76 @@
       margin: 29px auto 42px
   .activities
     padding-top: 0px
+    padding-bottom: 42px
     &__title
       font-size: 18px
       line-height: 23px
       margin-bottom: 36px
     &__card
-      margin-bottom: 22px
+      margin-bottom: 19px
+        
   .reviews
     padding-bottom: 9px
   .card
     width: 100%
     &__title
       max-width: 205px
-      margin-bottom: 19px
+      margin-bottom: 17px
       &--mb10
-        margin-bottom: 17px
-        margin-top: 122px
+        margin-bottom: 18px
+        margin-top: 119px
+    &__button
+      padding: 7px 20px    
   .footer
+    padding-top: 68px
+    &-wrapper
+      grid-row-gap: 29px
     &__contact
       &-form
         max-width: 281px
         position: relative
     &__info
       position: absolute
-      margin-top: 200px
+      margin-top: 203px
+    &__item
+      &--link
+        line-height: 29px
+        height: 22px
+      &--mb-2 
+        margin-bottom: 22px
+       
     &__message
       margin-bottom: 45px
     &__social
       &-network
         flex-wrap: wrap
+        flex-direction: column
+        margin-left: 0px
+        margin-top: 9px
+      &-links
+        margin-left: 2px  
     &__title
       &--inline
-        margin-bottom: 20px
+        margin-bottom: 22px
+      &--mb-4 
+        margin-bottom: 26px
+      &--mb-3 
+        margin-top: 13px 
+        margin-left: -2px  
+        margin-bottom: 14px
+    &__text
+      margin-bottom: 20px    
+    &__logo
+      width: 96px  
+    &__categories
+      grid-row: 5
+    &__legal
+      grid-row: 3
+    &__additional
+      grid-row: 4   
+    &__icon
+      &-wrapper 
+        min-width: 25px       
   .modal
     &__dialog
       width: 90%
@@ -509,3 +563,4 @@
         order: -2
       &--order1
         order: -1
+        margin-bottom: 29px

@@ -66,6 +66,7 @@ function closeModal1(event) {
 } 
 
 $('.modal__input--phone').mask('+7(000) 000-0000');
+$('.footer__input--phone').mask('+7(000) 000-0000');
 
 $('.form').each(function(){
   $(this).validate({
@@ -77,7 +78,7 @@ $('.form').each(function(){
     },
     email: {
       required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com",
+      email: "Your email address name@domain.com",
     },
     phone: {
       required: "Phone is required",
