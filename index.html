@@ -5,10 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
-  
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link  href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="preload">
+  <link rel="stylesheet"  href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
@@ -22,7 +22,7 @@
         </a>
         <form action="#" class="search navbar__search navbar__search--mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location">
-          <button class="search__button">
+          <button class="buttonh search__button">
             <img src="img/search.svg" alt="Icon: search">
           </button>
         </form>
@@ -52,31 +52,31 @@
           <li class="navbar-menu__item navbar-menu__item--mobile_visible">
             <form action="#" class="search navbar__search navbar__search--mobile_visible">
               <input type="text" class="search__input" placeholder="Search Location">
-              <button class="search__button">
+              <button class="buttonh search__button">
                 <img src="img/search.svg" alt="Icon: search">
               </button>
             </form>
           </li>
           <li class="navbar-menu__item navbar-menu__item--mt12">
-            <a href="#" class="navbar-menu__link">All Deals</a>
+            <a href="#" class="link navbar-menu__link">All Deals</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Hotels</a>
+            <a href="#" class="link navbar-menu__link">Hotels</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Activities</a>
+            <a href="#" class="link navbar-menu__link">Activities</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
+            <a href="#" class="link navbar-menu__link">Hotel Day Packages</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Restaurants</a>
+            <a href="#" class="link navbar-menu__link">Restaurants</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Events</a>
+            <a href="#" class="link navbar-menu__link">Events</a>
           </li>
           <li class="navbar-menu__item">
-            <a href="#" class="navbar-menu__link">Rodrigues</a>
+            <a href="#" class="link navbar-menu__link">Rodrigues</a>
           </li>
         </ul>
      </div>
@@ -87,10 +87,10 @@
     <div class="container">
       <ul class="breadcrumb-list">
         <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">Home</a>
+          <a href="#" class="link breadcrumb-list__link">Home</a>
         </li>
         <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          <a href="#" class="link breadcrumb-list__link">Flash Offers</a>
         </li>
         <li class="breadcrumb-list__item">
           <span class="breadcrumb-list__link">Grand Hilton Hotel</span>
@@ -157,17 +157,20 @@
               </div>
               <div class="booking__call-center">
                 <span class="booking__heading">Quick Booking</span>
-                <a class="booking__number" href="tel:12100">
+                <a class="link booking__number" href="tel:12100">
                   <img src="img/phone-call.svg" alt="Icon: Phone">
                   <span class="booking__num">12100</span>
                 </a>
               </div>
-              <button data-togle="modal" class="button booking__button">View Other Options</button>
+              <button data-togle="modal" class="button buttonh booking__button">View Other Options</button>
             </div>
-            <div class="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.2970310142733!3d7.8382523943522155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1632522233385!5m2!1sru!2sru"
-                 height="213" style="border:0;" allowfullscreen="" loading="lazy" class="maps5"></iframe>
+            <div class="maps">
+              <div class="map container-fluid" id="map_container">
+                <iframe
+                id="ymap_lazy"
+                data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5414950814966!2d98.2970310142733!3d7.8382523943522155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1632522233385!5m2!1sru!2sru"
+                 height="213" style="border:0;"   class="maps5" ></iframe>
+              </div>
             </div>
           </div>
           
@@ -185,7 +188,7 @@
         <input type="email" class="input input-subscribe" placeholder="Your email address" name="email" required>
         </div>
         
-        <button class="subscribe__button">Send</button>
+        <button class="buttonh subscribe__button">Send</button>
       </form>
     </div>
   </section>
@@ -262,22 +265,22 @@
         <div class="card activities__card activities__card--order" data-aos="flip-up" data-aos-delay="100">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image">
           <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-          <button data-togle="modal" class="card__button">Book Now</button>
+          <button data-togle="modal" class="buttonh card__button">Book Now</button>
         </div>
         <div class="card activities__card " data-aos="flip-up" data-aos-delay="300">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image">
           <h3 class="card__title card__title--mb10">Gymkhana club golf course</h3>
-          <button data-togle="modal" class="card__button">Book Now</button>
+          <button data-togle="modal" class="buttonh card__button">Book Now</button>
         </div>
         <div class="card activities__card activities__card--order1" data-aos="flip-up" data-aos-delay="500">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
           <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
-          <button data-togle="modal" class="card__button">Book Now</button>
+          <button data-togle="modal" class="buttonh card__button">Book Now</button>
         </div>
         <div class="card activities__card" data-aos="flip-up" data-aos-delay="700">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title card__title--mb10">The blue marine discovery quest</h3>
-          <button data-togle="modal" class="card__button">Book Now</button>
+          <button data-togle="modal" class="buttonh card__button">Book Now</button>
         </div>
       </div>
     </div>
@@ -291,42 +294,42 @@
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
-            <li class="footer__item footer__item--link"><a href="#" class="footer__link">All Deals</a></li>
-            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Hotels</a></li>
-            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Activities</a></li>
-            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Spa Packages</a></li>
-            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Hotel Day Packages</a></li>
-            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Restaurants</a></li>
-            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Fitness</a></li>
-            <li class="footer__item footer__item--link"><a href="#" class="footer__link">Rodrigues</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="link footer__link">All Deals</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="link footer__link">Hotels</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="link footer__link">Activities</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="link footer__link">Spa Packages</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="link footer__link">Hotel Day Packages</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="link footer__link">Restaurants</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="link footer__link">Fitness</a></li>
+            <li class="footer__item footer__item--link"><a href="#" class="link footer__link">Rodrigues</a></li>
           </ul>
         </div>
         <div class="footer__list footer__additional">
           <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
           <ul class="footer__ul">
-            <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">How does it work?</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Frequently Asked Questions</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Deals.mu loyalty program</a></li>
-            <li class="footer__item"><a href="#" class="footer__link">Promote your Business on BTP</a></li>
+            <li class="footer__item"><a href="#" class="link footer__link">About Us</a></li>
+            <li class="footer__item"><a href="#" class="link footer__link">Contact Us</a></li>
+            <li class="footer__item"><a href="#" class="link footer__link">How does it work?</a></li>
+            <li class="footer__item"><a href="#" class="link footer__link">Frequently Asked Questions</a></li>
+            <li class="footer__item"><a href="#" class="link footer__link">Deals.mu loyalty program</a></li>
+            <li class="footer__item"><a href="#" class="link footer__link">Promote your Business on BTP</a></li>
           </ul>
         </div>
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="https://ru-ru.facebook.com/" class="footer__links" target="_blank"><img src="img/facebok.svg" alt=""></a>
-            <a href="https://www.youtube.com/" class="footer__links" target="_blank"><img src="img/youtube.svg" alt=""></a>
-            <a href="https://www.instagram.com/" class="footer__links" target="_blank"><img src="img/instagram.svg" alt=""></a>
+            <a href="https://ru-ru.facebook.com/" class="links footer__links" target="_blank"><img src="img/facebok.svg" alt=""></a>
+            <a href="https://www.youtube.com/" class="links footer__links" target="_blank"><img src="img/youtube.svg" alt=""></a>
+            <a href="https://www.instagram.com/" class="links footer__links" target="_blank"><img src="img/instagram.svg" alt=""></a>
           </div>
         </div>
           <div class="footer__list footer__legal">
             <h3 class="footer__title">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
-              <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Disclaimer</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Cancellation policy</a></li>
-              <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+              <li class="footer__item"><a href="#" class="link footer__link">Terms & Conditions</a></li>
+              <li class="footer__item"><a href="#" class="link footer__link">Disclaimer</a></li>
+              <li class="footer__item"><a href="#" class="link footer__link">Cancellation policy</a></li>
+              <li class="footer__item"><a href="#" class="link footer__link">Privacy</a></li>
             </ul>
           </div>
           <div class="footer__contact-details">
@@ -341,15 +344,15 @@
               <li class="footer__item footer__item--mb-2 footer__item--wid">
                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/contact-phone-call.svg" alt=""></div>
                 <div>
-                Tel (business hours) : <a href="tel:2691500" class="footer__tel">269 1500</a><br>
-                Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__tel">52&nbsp;-56-61-38</a>(08:00 am – 20:00 pm)<br>
-                Tel (hotline) Sunday: <a href="tel:52566138" class="footer__tel">52-56-61-38</a> (08:00 am – 14:00 pm)<br>
+                Tel (business hours) : <a href="tel:2691500" class="link footer__tel">269 1500</a><br>
+                Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="link footer__tel">52&nbsp;-56-61-38</a>(08:00 am – 20:00 pm)<br>
+                Tel (hotline) Sunday: <a href="tel:52566138" class="link footer__tel">52-56-61-38</a> (08:00 am – 14:00 pm)<br>
                 </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper"><img class="footer__icon" src="img/email.svg" alt=""></div>
                 
-                <a href="#" class="footer__link">cherly.lawson@example.com</a>
+                <a href="mailto:mobzik@inbox.ru" class="link footer__link">cherly.lawson@example.com</a>
               </li>
             </ul>
           </div>
@@ -359,7 +362,7 @@
               <div class="footer__input-group"><input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2"></div>
               <div class="footer__input-group"><input type="tel" class="input footer__input footer__input--phone" placeholder="Phone Number*" name="phone" required minlength="16"></div>
               <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
-              <button class="button footer__button">Send</button>
+              <button class="button buttonh footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -393,7 +396,7 @@
         <div class="modal__input-group"><input type="email" class="input modal__input" placeholder="Email*" name="email" required></div>
         
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
-        <button class="button modal__button">Send</button>
+        <button class="button buttonh modal__button">Send</button>
         <span class="modal__info">* Required Fields</span>
       </form>
     </div>
