@@ -984,8 +984,9 @@ template {
   cursor: pointer;
 }
 
-.modal__input--subscribe {
+.input-subscribe {
   padding-right: 0;
+  width: 100%;
 }
 
 .reviews {
@@ -1929,6 +1930,10 @@ template {
   }
   .navbar-menu__item--mt12 {
     margin-top: 12px;
+  }
+  .subscribe__input {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .menu-button {
     display: -webkit-box;
